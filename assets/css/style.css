@@ -1,14 +1,104 @@
 .gridContainer{
+    font-family: 'Archivo', sans-serif;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 50px 400px 300px 100px 200px 300px 50px;
+    grid-template-rows: 75px 400px 350px 125px 300px 300px 50px;
+}
+/*------------------------------*/
+.menu img{
+position: absolute;
+left: 15%;
+top: 20px;
+}
+.menu #menuBalk{
+    left: 12%;
+    height: 50px;
+    width: 950px;
+    top: 60px;
+    position: absolute;
+    background-color: #222931;
+}
+a:nth-child(1){
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 4%;
+    font-size: 16px;
+    color: #ffffff;
+}
+a:nth-child(2){
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 11%;
+    font-size: 16px;
+    color: #ffffff;
 }
 
-.menu{
-    grid-column: 1;
-    grid-column-end: 2;
-    grid-row: 1;
+a:nth-child(3){
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 23%;
+    font-size: 16px;
+    color: #ffffff;
 }
+a:nth-child(4){
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 34%;
+    font-size: 16px;
+    color: #ffffff;
+}
+a:nth-child(5){
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    left: 42%;
+    font-size: 16px;
+    color: #ffffff;
+}
+#angleDown{
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    height: 16px;
+    width: 16px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(106%) contrast(101%);
+}
+/*------------------------------*/
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #222931bb;
+  }
+  .overlay p{
+    color: #ffffff;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 17.5%;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+/*------------------------------*/
 .header{
     grid-column: 1;
     grid-column-end: 4;
@@ -18,46 +108,131 @@
     width: 100%;
     height: 100%;
 }
+/*------------------------------*/
 .banner{
     grid-row: 3;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
 }
 .banner1{
-    grid-column: 1;
-    grid-column-end: 2;
+position: absolute;
+top: 550px;
+left: 13%;
 }
 .banner1 img{
-padding: 15% 0% 0% 30%;
-width: 70%;
-height: 75%;
+    width: 100%;
+    height: 100%;
 }
 .banner2{
-    grid-column: 2;
-    grid-column-end: 3;
+    position: absolute;
+    top: 550px;
+    left: 35%;
 }
 .banner2 img{
-padding: 15% 15% 0% 15%;
-width: 70%;
-height: 75%;
+    width: 100%;
+    height: 100%;
 }
 .banner3{
-    grid-column: 3;
-    grid-column-end: 4;
+    position: absolute;
+    top: 550px;
+    left: 57%;
 }
 .banner3 img{
-padding: 15% 10% 0% 0%;
-width: 70%;
-height: 75%;
+    width: 100%;
+    height: 100%;
 }
 .wboBanner{
     background-color: #ffe718;
     grid-column: 1;
     grid-column-end: 4;
+    grid-row: 4;
 }
+.wboBanner p:nth-child(1){
+    position: absolute;
+    font-size: 34px;
+    top: 840px;
+    left: 10%;
+}
+.wboBanner p:nth-child(2){
+    position: absolute;
+    font-size: 16px;
+    top: 875px;
+    left: 35%;
+}
+#meerWetenButton{
+    position: absolute;
+    top: 880px;
+    left: 65%;
+    height: 5%;
+    width: 10%;
+    background-color: #ffffff;
+}
+#meerWetenButton p{
+    position: absolute;
+    font-size: 12px;
+    top: 0%;
+    left: 20%;
+}
+#meerWetenButton:hover{
+    background-color: #222931;
+    color: #ffffff;
+}
+/*------------------------------*/
 .footer{
     grid-column: 1;
     grid-column-end: 4;
+    grid-row: 5;
 }
 .footer img{
+    padding-top: 50px;
     width: 100%;
-height: 100%;
+    height: 75%;
 }
+/*------------------------------*/
+.footerItem{
+    background-color: #ffe718;
+    width: 305px;
+    height: 105px;
+}
+.footerItem b{
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    font-size: 24px;
+}
+.footerItem p{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    font-size: 12px;
+}
+.footerItem img{
+padding-top: 7%;
+width: 120px;
+height: 60px;
+}
+#footerItem1{
+    position: absolute;
+    top: 1180px;
+    left: 210px;
+}
+#footerItem2{
+    position: absolute;
+    top: 1180px;
+    left: 540px;
+}
+#footerItem3{
+    position: absolute;
+    top: 1180px;
+    left: 870px;
+}
+
+#footerItem2:hover{
+    color: #ffffff;
+    background-color: #222931;
+}
+#footerItem2:hover img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(106%) contrast(101%);
+}
+/*------------------------------*/
