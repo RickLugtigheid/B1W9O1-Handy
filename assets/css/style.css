@@ -1,8 +1,10 @@
-.gridContainer{
+body{
     font-family: 'Archivo', sans-serif;
+}
+.gridContainer{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 75px 400px 350px 125px 300px 300px 50px;
+    grid-template-rows: 75px 400px 350px 125px 300px 100px;
 }
 /*------------------------------*/
 .menu img{
@@ -236,3 +238,42 @@ height: 60px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(50deg) brightness(106%) contrast(101%);
 }
 /*------------------------------*/
+#overOnsFooter{
+    position: absolute;
+    font-size: 16px;
+    left: 210px;
+    width: 430px;
+    height: 240px;
+}
+#overOnsFooter p:nth-child(1){
+    font-size: 24px;
+}
+#contactFooter{
+    position: absolute;
+    font-size: 16px;
+    left: 880px;
+    width: 430px;
+    height: 240px;
+}
+#contactFooter p:nth-child(1){
+    font-size: 24px;
+}
+#contactFooter img{
+    height: 24px;
+    width: 24px;
+}
+#contactFooter p:nth-child(3){
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+#contactFooter p:nth-child(7){
+    position: absolute;
+    top: 105px;
+    left: 40px;
+}
+#contactFooter p:nth-child(11){
+    position: absolute;
+    top: 150px;
+    left: 40px;
+}
